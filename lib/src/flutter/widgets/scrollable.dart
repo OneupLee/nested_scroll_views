@@ -807,6 +807,10 @@ class ScrollableState extends State<Scrollable> with TickerProviderStateMixin, R
 
   @override
   String? get restorationId => widget.restorationId;
+
+  @override
+  // TODO: implement devicePixelRatio
+  double get devicePixelRatio => MediaQuery.of(context).devicePixelRatio;
 }
 
 /// A widget to handle selection for a scrollable.
